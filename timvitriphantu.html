@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm vị trí phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    let arr = [1,2,3,5,6,54,78,33,5];   
+    let giaTriCanTim = prompt("nhập giá trị cần tìm trong mảng: ");   
+    function findIndex(arr, giaTriCanTim) {
+        let status = false;
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === giaTriCanTim) {
+                status = true;
+                index = i;
+            }
+        }
+        if (status === true) {
+            alert(`Phần tử ở vị trí index là : ${index}`);
+        } else {
+            alert('Không có phần tử trong mảng');
+        } return findIndex(arr,giaTriCanTim)
+    }
+    let result = findIndex(arr,6)
+</script>    
+</body>
+</html>

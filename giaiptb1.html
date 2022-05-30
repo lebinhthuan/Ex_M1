@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải PT bậc 1</title>
+</head>
+<body>
+    
+<script>
+    let a = +prompt("nhập a: ");
+    let b = +prompt("nhập b: ");  
+    function gptb1(a,b){
+        if (a==0){
+            if(b==0){
+                alert('phương trình vô số nghiệm');
+            }else {
+                alert("phương trình vô nghiệm");
+                }           
+        } else {
+            let x = 0;
+            x = (-b/a);
+            alert("phương trình có nghiệm: "+x)
+        } return x = -b/a;
+    }         
+    let resutl =gptb1(5,8);
+</script>
+
+</body>
+</html>
