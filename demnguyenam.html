@@ -8,19 +8,20 @@
 </head>
 <body>
     <script>
-        let str = prompt("mời nhập chuỗi: ");
-        let dem = 0;
+        let str = prompt("mời nhập chuỗi: ");        
         function demNguyenAm(str){
+            let dem = 0;
             for (let i = 0; i < str.length; i++) {               
-                let arr = [a,o,u,i,e];
+                let arr = ["a","o","u","i","e"];
                 for (let j = 0; j < arr.length; j++){
                     if (str[i] == arr[j]){
                         dem = dem++;
                     }
                 }
-            } return dem
+            } return dem             
         }
         let result = demNguyenAm(str)
+        alert("tong so ky tu nguyen am trong chuoi:"+result)
     </script>
 </body>
 </html>

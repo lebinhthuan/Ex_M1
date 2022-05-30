@@ -8,7 +8,39 @@
 </head>
 <body>
     <script>
-        
+        class Animal{
+            name;
+            cannang;
+            constructor(name,cannang){
+                this.name = name;
+                this.weight = weight;
+            }
+            get name() {
+                return this._name;
+            }
+
+            setName(value) {
+                this._name = value;
+            }
+
+            get weight() {
+                return this._weight;
+            }
+
+            setWeight(value) {
+                this._weight = value;
+            }
+            toString(){
+            return`Đây là con: ${this.name} có cân nặng là: ${this.weight}`
+            }           
+        }
+        let objAnimal1 = new Animal(`Elephant`,45.6)
+            let objAnimal2 = new Animal(`Tiger`,40.6)
+            objAnimal2.setName(`Mouse`)
+            objAnimal1.toString()
+            objAnimal2.toString()
+            console.log(objAnimal1.toString())
+            console.log(objAnimal2.toString())
     </script>
     
 </body>
